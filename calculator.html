@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src=ss.js></script>
+   
+
+    <title>JavaScript Calculator</title>
+
+    
+</head>
+<body>
+    
+<input type="number" name="" id="n1"><br>
+<input type="number" name="" id="n2"><br>
+<button onclick="add()">+</button>
+<button onclick="minus()">-</button>
+<button onclick="multiply()">X</button>
+<button onclick="divide()">/</button>
+
+<p id="result" style="border: 1px solid black; height: 20px;"></p>
+
+<script>
+
+
+    function add(){
+        var f1 = document.getElementById("n1").value;
+        var f2 = document.getElementById("n2").value;
+        var f1 = parseInt(f1);
+        var f2 = parseInt(f2);
+        var total = f1 + f2;
+
+        document.getElementById("result").innerHTML = total;
+    }
+    function minus(){
+        var f1 = document.getElementById("n1").value;
+        var f2 = document.getElementById("n2").value;
+        var f1 = parseInt(f1);
+        var f2 = parseInt(f2);
+        var total = f1 - f2;
+
+        document.getElementById("result").innerHTML = total;
+    }
+    function multiply(){
+        var f1 = document.getElementById("n1").value;
+        var f2 = document.getElementById("n2").value;
+        var f1 = parseInt(f1);
+        var f2 = parseInt(f2);
+        var total = f1 * f2;
+
+        document.getElementById("result").innerHTML = total;
+    }
+    function divide(){
+        var f1 = document.getElementById("n1").value;
+        var f2 = document.getElementById("n2").value;
+        var f1 = parseInt(f1);
+        var f2 = parseInt(f2);
+        var total = f1 / f2;
+
+        document.getElementById("result").innerHTML = total;
+    }
+
+</script>
+
+</body>
+</html>
